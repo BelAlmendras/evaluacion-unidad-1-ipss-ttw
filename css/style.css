@@ -1,0 +1,271 @@
+body
+{ 
+    background-color: #000;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+
+nav
+{
+    background-color: #fff;
+    color: #241001;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 1% 1% 3%;
+    align-items: center;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo a{
+   color: #241001;
+   font-size: 1.5rem;
+   font-weight: 700;
+   text-decoration: none;
+}
+
+.logo a:hover{
+    color: goldenrod;
+}
+
+nav ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0 10% 0 0;
+    padding: 0;
+    gap: 15%;
+}
+
+nav li a
+{
+    color: #241001;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav li a:hover
+{
+    color: goldenrod;
+}
+
+footer
+{
+    background-color: #fff;
+    color: #241001;
+    text-align: center;
+    padding: 3%;
+}
+main {
+    text-align: center;
+}
+
+.hero
+{
+   display: flexbox; 
+}
+
+.hero
+{
+    width: 100%;
+    position: relative;
+}
+
+.hero img
+{
+    width: 100%;
+    display: block;
+}
+
+.hero-text
+{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+
+.hero-text h1
+{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+.hero-text h2
+{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 0%;
+}
+
+.description
+{
+    text-align: center;
+    padding: 10%;
+}
+
+.description h2
+{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+
+.description p
+{
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify;
+    margin: 0 15% 0 15%;
+}
+
+.gallery
+{
+    padding: 10%;
+}
+
+.gallery h1
+{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 7%;
+    text-align: left;
+}
+.card-container
+{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    border-color: goldenrod;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+   
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.card p {
+    font-size: 1rem;
+    font-weight: 300;
+   
+    margin-bottom: 0;
+}
+
+.title-form {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.title-form h1 {
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+.title-form p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+form {
+    background-color: goldenrod;
+    padding: 5% 5% 5% 5%;
+    border-radius: 10px;
+    margin: 5% 25% 5% 25%;
+    display: flexbox;
+    flex-direction: column;  
+   gap: 20px;
+}
+
+
+
+label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-right: 10%;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 5%;
+}
+
+option {
+    width: 40%;
+    justify-content: start;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-weight: 300;
+}
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 5% 0 0 0;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #241001;
+}
+
