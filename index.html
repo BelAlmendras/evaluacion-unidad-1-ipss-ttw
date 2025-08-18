@@ -9,7 +9,14 @@
     <title>Galeria Reflejo Inverso</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,31 +26,38 @@
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <img src="img/logo.png" alt="logo" width="100px">
-            <a href="index.html">Galeria Reflejo Inverso</a>
+   <nav class="navbar navbar-expand-lg bg-transparent mx-auto">
+  <div class="container-fluid">
+    <img src="img/logo.png" alt="logo"  width="100px">
+    <a class="navbar-brand" href="./index.html">Galeria Reflejo Inverso</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+        <a class="nav-link" href="./index.html#quienessomos">¿Quiénes somos?</a>
+        <a class="nav-link" href="./galeria.html">Galeria</a>
+        <a class="nav-link" href="./contacto.html">Contacto</a>
+        <a class="nav-link disabled" aria-disabled="true">Artistas</a>
+      </div>
+    </div>
+  </div>
+</nav>
 
-        </div>
-        <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    
     <main>
-        <div class="hero">
-            <div class="hero-text">
-
-                <h1>Galeria Reflejo Inverso</h1>
-                <h2>Un espacio que conecta contigo</h2>
-            </div>
-            <img src="img/hero.jpg" alt="heroimage" width="100%">
+        <div  class="hero d-flex align-items-center justify-content-center text-center">
+               <div class="hero-content text-black">
+    <h1 class="display-4 fw-bold  text-center">Galeria Reflejo Inverso</h1>
+    <p class="fs-3 text-center">Un espacio que conecta contigo</p>
+    
+  </div>
+            
         </div>
 
         <div class="description">
-            <h2>¿Quiénes somos?</h2>
+            <h2 id="quienessomos">¿Quiénes somos?</h2>
+           
             <p>Somos una galería de arte de vanguardia fundada en 2019 con el propósito de crear un espacio real y
                 accesible
                 a artistas emergentes locales. Nacimos del deseo de acercar el arte a la comunidad y ser un punto de

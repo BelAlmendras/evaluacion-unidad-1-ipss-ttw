@@ -8,6 +8,11 @@
     <title>Galeria Reflejo Inverso</title>
     <meta name="keywords" content="Galeria, Reflejo Inverso, arte, diseño">
     <link rel="stylesheet" href="css/style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,25 +22,37 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
+   <nav class="navbar navbar-expand-lg bg-white mx-auto">
+        <div class="container-fluid">
             <img src="img/logo.png" alt="logo" width="100px">
-            <a href="index.html">Galeria Reflejo inverso</a>
+            <a class="navbar-brand" href="./index.html">Galeria Reflejo Inverso</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    <a class="nav-link" href="./index.html#quienessomos">¿Quiénes somos?</a>
+                    <a class="nav-link" href="./galeria.html">Galeria</a>
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                    <a class="nav-link disabled" aria-disabled="true">Artistas</a>
+                </div>
+            </div>
         </div>
-        <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
     </nav>
+
     
-    <main> 
-        <div class="title-form">
+    <main class="contacto"> 
+        <div class="title-form text-white">
         <h1>¡Hablemos!</h1>
          <p>¿Te interesa alguna obra? <br>
         ¿Quieres exponer?</p>
         </div>
-        <form>
+        
+<form>
+
+
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
             <label for="phone">Teléfono:</label>
@@ -48,11 +65,15 @@
                 <option value="vender">Exponer</option>
                 <option value="otros">Otros</option>
             </select>
-            <label for="message">Mensaje:</label>
+            <label for="message" class="my-2">Mensaje:</label>
             <textarea id="message" name="message" required></textarea>
             <button type="submit">Enviar</button>
 
-        </form>
+        </form> 
+
+
+
+        
     </main>
 
     <footer>

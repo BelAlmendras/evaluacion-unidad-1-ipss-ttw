@@ -7,6 +7,11 @@
     <meta name="author" content="Belen Almendros">
     <title>Galeria Reflejo Inverso</title>
     <meta name="keywords" content="Galeria, Reflejo Inverso, arte, diseño">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,100 +22,157 @@
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
+    <nav class="navbar navbar-expand-lg bg-white mx-auto">
+        <div class="container-fluid">
             <img src="img/logo.png" alt="logo" width="100px">
-            <a href="index.html">Galeria Reflejo inverso</a>
+            <a class="navbar-brand" href="./index.html">Galeria Reflejo Inverso</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    <a class="nav-link" href="./index.html#quienessomos">¿Quiénes somos?</a>
+                    <a class="nav-link" href="./galeria.html">Galeria</a>
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                    <a class="nav-link disabled" aria-disabled="true">Artistas</a>
+                </div>
+            </div>
         </div>
-        <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
     </nav>
 
     <main>
-    <div class="gallery">
-        <h1>Destacados Julio 2025</h1>
+        <div class="gallery">
+            <h1 class="text-center display-6">Destacados Agosto 2025</h1>
 
-        <div class="card-container">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+                        aria-label="Slide 9"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
+                        aria-label="Slide 10"></button>
 
-            <div class="card">
-                <img src="img/obras/estudio-de-claveles.jpg" alt="estudio-de-claveles" width="75%">
-                <h2><i>"Estudio de claveles"</i></h2>
-                <h3>Enzo Fernandez - 2023</h3>
-                <p>Óleo sobre tela. <br> 75x100cm </p>
-            </div>
-            
-            <div class="card">
-                <img src="img/obras/guacamaya-roja.jpg" alt="guacamaya-roja" width="75%">
-                <h2><i> "Guacamaya roja"</i></h2>
-                <h3>Daniel Perez - 2024</h3>
-                <p> Fotografía digital, impresión en papel fine art. <br> 30x60cm</p>
-            </div>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/obras/Soledad.jpg" alt="Soledad" width="50%">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><i>"Soledad"</i></h5>
+                            <p>Gabriel Perez - 2025 <br>
+                                Fotografía digital, impresión en papel fine art. <br>
+                                100x150cm
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/obras/tarde-de-domingo.jpg" alt="tarde-de-domingo" width="50%">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h5><i>"Tarde de domingo"</i></h5>
+                            <p>Javier Tapia - 2011 <br>
+                                Collage digital, impresión en papel fine art. <br>
+                                105x75cm
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/obras/solo-una-moneda.jpg" alt="solo-una-moneda" width="75%">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><i>"Solo una moneda"</i></h5>
+                            <p>Jose Ramirez - 2020<br>
+                                Fotografía digital, impresión en papel fine art.<br>
+                                50x75cm
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/obras/ocultar-la-belleza.jpg" alt="ocultar-la-belleza" width="75%">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h5><i>"Ocultar la belleza"</i></h5>
+                            <p>Francisca Diaz - 2025<br>
+                                Acuarela sobre papel <br> 100x100cm</p>
+                        </div>
+                    </div>
 
-            <div class="card">
-                <img src="img/obras/frutos-de-la-tierra.jpg" alt="frutos-de-la-tierra" width="100%">
-                <h2> <i>"Frutos de la tierra"</i></h2>
-                <h3>Carla Garcia - 2024</h3>
-                <p>Técnica de estampado sobre lienzo. <br> 30x40cm</p>
-            </div>
+                    <div class="carousel-item">
+                        <img src="img/obras/oasis-en-la-selva-valdiviana.jpg" alt="oasis-en-la-selva-valdiviana"
+                            width="75%">
+                        <div class="carousel-caption d-none d-md-block text-black">
+                            <h5><i>"Oasis en la selva valdiviana"</i></h5>
+                            <p>Carlos Flores - 2025<br>
+                                Fotografía digital, impresión en papel fine art. <br> 50x75cm</p>
+                        </div>
+                    </div>
 
-            
-
-            <div class="card">
-                <img src="img/obras/Lluvia-de-abril.jpg" alt="Lluvia-de-abril" width="100%">
-                <h2><i>"Lluvia de abril"</i></h2>
-                <h3>Carolina Fuentes Leiva - 2025</h3>
-                <p>Óleo sobre tela. <br> 50x75cm</p>
-            </div>
-
-            <div class="card">
-                <img src="img/obras/oasis-en-la-selva-valdiviana.jpg" alt="oasis-en-la-selva-valdiviana" width="75%">
-                <h2><i>"Oasis en la selva valdiviana"</i></h2>
-                <h3>Carlos Flores - 2025</h3>
-                <p>Fotografía digital, impresión en papel fine art. <br> 50x75cm</p>
-            </div>
-
-            <div class="card">
-                <img src="img/obras/ocultar-la-belleza.jpg" alt="ocultar-la-belleza" width="75%">
-                <h2><i>"Ocultar la belleza"</i></h2>
-                <h3>Francisca Diaz - 2025</h3>
-                <p>Acuarela sobre papel <br> 100x100cm</p>
-            </div>
-
-            <div class="card">
-                <img src="img/obras/Renacer.jpg" alt="renacer" width="75%">
-                <h2><i>"Renacer"</i></h2>
-                <h3>Alfonso Bastias - 2019</h3>
-                <p>Acrilico sobre tela. <br> 40x60cm</p>
-            </div>
+                    <div class="carousel-item">
+                        <img src="img/obras/Lluvia-de-abril.jpg" alt="Lluvia-de-abril" width="75%">
+                        <div class="carousel-caption d-none d-md-block text-black">
+                            <h5><i>"Lluvia de abril"</i></h5>
+                            <p>Carolina Fuentes Leiva - 2025<br>
+                                Óleo sobre tela. <br> 50x75cm</p>
+                        </div>
+                    </div>
 
 
+                    <div class="carousel-item">
+                        <img src="img/obras/frutos-de-la-tierra.jpg" alt="frutos-de-la-tierra" width="75%">
+                        <div class="carousel-caption d-none d-md-block text-black">
+                            <h5><i>"Frutos de la tierra"</i></h5>
+                            <p>Carla Garcia - 2024<br>
+                                Técnica de estampado sobre lienzo. <br> 30x40cm</p>
 
-            <div class="card">
-                <img src="img/obras/solo-una-moneda.jpg" alt="solo-una-moneda" width="75%">
-                <h2><i>"Solo una moneda"</i></h2>
-                <h3>Jose Ramirez - 2020</h3>
-                <p>Fotografía digital, impresión en papel fine art. <br> 50x75cm</p>
-            </div>
+                        </div>
+                    </div>
 
-            <div class="card">
-                <img src="img/obras/Soledad.jpg" alt="Soledad" width="75%">
-                <h2><i>"Soledad"</i></h2>
-                <h3>Gabriel Perez - 2025</h3>
-                <p>Fotografía digital, impresión en papel fine art. <br> 100x150cm</p>
-            </div>
+                    <div class="carousel-item">
+                        <img src="img/obras/guacamaya-roja.jpg" alt="guacamaya-roja" width="50%">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h5><i> "Guacamaya roja"</i></h5>
+                            <p>Daniel Perez - 2024<br>
+                                Fotografía digital, impresión en papel fine art. <br> 30x60cm</p>
+                        </div>
+                    </div>
 
-            <div class="card">
-                <img src="img/obras/tarde-de-domingo.jpg" alt="tarde-de-domingo" width="75%">
-                <h2><i>"Tarde de domingo"</i></h2>
-                <h3>Javier Tapia - 2011</h3>
-                <p>Collage digital, impresión en papel fine art. <br>105x75cm</p>
+                    <div class="carousel-item">
+                        <img src="img/obras/estudio-de-claveles.jpg" alt="estudio-de-claveles" width="50%">
+                        <div class="carousel-caption d-none d-md-block text-black">
+                            <h5><i>"Estudio de claveles"</i></h5>
+                            <p>Enzo Fernandez - 2023<br>
+                                Óleo sobre tela. <br> 75x100cm </p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </div>
-</main>
+    </main>
     <footer>
         <h4>
             Avenida Portales 566, Santiago, Chile <br>
